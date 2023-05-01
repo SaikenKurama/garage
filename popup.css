@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Lobster&family=Roboto:ital,wght@0,700;1,500&family=Tilt+Prism&display=swap');
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+body{
+    color: black;
+    background-color: rgb(176, 164, 151);
+}
+.popup{
+    width: 400px;
+    background: #E1DDD2;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #555a54;
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 10%;
+    
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #468d25;
+    color: #000000;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}

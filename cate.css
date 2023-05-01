@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Oswald:wght@300&family=Poltawski+Nowy&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 15px;
+    font-family: 'Poltawski Nowy', serif;
+    color: antiquewhite;
+}
+body {
+    /*background-image: url(./img/hotelex.jpg);
+    background-size:1370px;
+    background-position:top center;*/
+    background-color:#d8b082;
+    color: #DE8E59;
+    font-family: 'Poltawski Nowy', serif;
+    z-index: 1;
+    position: relative;
+}
+/*
+#home .logo{
+    float: right;
+    display: flex;
+    margin: 50px;
+    width: 500px;
+    height:500px;
+}
+#home{
+    background-image: url(img/hotelex.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-color: rgb(255, 251, 239);
+    position: relative;
+    z-index: 1;
+}
+#home::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    opacity: .7;
+    z-index: -1;
+}
+#home .welcome{
+    position: relative;
+    width: 500px;
+    margin: 50px;
+    flex-basis: 50%;
+    align-items:baseline;
+    justify-content: flex-start;
+}
+#home h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: rgb(27, 27, 27);
+    animation: text_reveal .5s forwards;
+}
+#home h1:nth-child(1){
+    animation-delay: 1s;
+}
+#home h1:nth-child(2){
+    animation-delay: 1.5s;
+}
+#home h1:nth-child(3){
+    animation: text_reveal_name .5s forwards;
+    animation-delay: 1.1s;
+}
+#home h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(168, 144, 63);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+#home h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#home h1:nth-child(2) span{
+    animation-delay: 1s;
+}
+#home h1:nth-child(3) span{
+    animation-delay: 1.1s;
+}
+#home .port{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(110, 85, 46);
+    background-color: transparent;
+    border: 2px solid rgb(110, 83, 47);
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#home .port:hover{
+    color: rgb(117, 108, 58);
+    background-color: rgb(170, 153, 75);
+}
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(114, 80, 16);
+        font-weight: 500px;
+    }
+}*/
+
+.container{
+    display:flex;
+}
+.pic{
+    height: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+img{
+    height: 400px;
+    width:250px;
+    border-radius: 3px;
+}
+.intro{
+    height: 50px;
+    width: 250px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 55px;
+    background: rgba(27, 27, 27, .5);
+    color: #cfae51;
+   
+}
+.container h2{
+    margin: 10px;
+    font-size: 30px;
+}
+.container p{
+    margin: 10px;
+    font-size:16px;
+    visibility: hidden;
+    opacity: 0;
+}
+.pic:hover{
+    cursor: pointer;
+}
+.pic:hover .intro{
+    height: 220px;
+    bottom: 125px;
+    background: rgba(0, 0, 0, 0.637);
+}
+.pic:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.pic:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+.full-page{
+    height: 100%;
+    width: 100%;
+    /*background-image: url(./img/hotelex.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;*/
+    background-color: #000000;
+    position: relative;  
+}
+h3{
+    color: #f3d46e;
+}
+h3 span{
+    color: #ffa47a;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a{
+    text-decoration:none;
+    font-size: 15px;
+    color: #fffeed;
+    padding: 7px 0;
+    
+}
+nav ul li a:hover{
+    color: rgb(219, 210, 124);
+    transition: .4s;
+}
+header{
+    position: relative;
+    margin:0;
+}
+footer{
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    font-family:'Roboto', serif;
+    padding-top: 40px;
+    color: #e2e0c2;
+    display: flex;
+}
+/*
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+}*/
+.footer_section h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+.footer_section p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+    align-items: center;
+
+}
